@@ -15,11 +15,13 @@ const data = {
 const main = document.querySelector('.main')
 main.innerHTML = 
 `<img id="placeholder" src=${data.image} alt="Display Picture"  data-testid="slackDisplayImage" />
+<div class="details">
 <h2 data-testid="slackUserName">${data.name} </h2>
 <p data-testid="currentDayOfTheWeek"> ${weekDays[data.today]}</p>
 <p  data-testid="currentUTCTime"> ${data.Time} </p> 
 <p data-testid="myTrack">${data.Track}</p>
 <a href = ${data.github} alt ="Link to Github"  data-testid="githubURL"> Github Link </a>
+</div>
 `
 
 
